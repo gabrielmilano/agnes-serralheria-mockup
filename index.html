@@ -5,173 +5,195 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <title>Agnes Serralheria · Portões, grades e estruturas em Içara (prévia)</title>
-<meta name="description" content="Prévia de site para a Agnes Serralheria — portões, grades, corrimãos, guarda-corpos e estruturas em ferro, em Içara e região.">
+<meta name="description" content="Prévia de site para a Agnes Serralheria: portões, grades, corrimãos, guarda-corpos e estruturas em ferro sob medida em Içara e região.">
 <meta property="og:title" content="Agnes Serralheria · prévia de site">
-<meta property="og:description" content="Transformamos seu projeto em realidade. Proposta de página com obras e orçamento direto no WhatsApp.">
+<meta property="og:description" content="Portões, grades, corrimãos e estruturas em ferro sob medida em Içara e região.">
 <meta property="og:image" content="assets/og.jpg">
 <link rel="icon" href="assets/perfil.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Playfair+Display:ital,wght@1,600;1,700&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
 <style>
-  /* A identidade é a dos posts da Agnes: fundo escuro, frase em itálico serifado branco
-     + linha em caixa alta condensada amarela, fotos reais das obras.
-     Os destaques do perfil (Em ação, Trabalhos feitos, Corrimão, Estruturas, P/Madeira) viram filtros. */
+  /* Site institucional sóbrio: fundo claro, grade organizada, preto da marca e dourado só como acento. */
   :root {
-    --preto: #0b0b0b;
-    --preto-2: #151412;
-    --preto-3: #1e1c18;
-    --ouro: #f4b41a;
-    --ouro-claro: #ffcb45;
-    --branco: #ffffff;
-    --texto: #ece7dc;
-    --suave: #a8a193;
-    --linha: #2c2a25;
+    --preto: #111111;
+    --grafite: #2a2a2a;
+    --ouro: #e8a90f;
+    --ouro-esc: #a87800;
+    --fundo: #ffffff;
+    --cinza: #f4f4f2;
+    --texto: #222222;
+    --suave: #626262;
+    --linha: #e3e3df;
     --zap: #1b9c50;
-    --cond: "Oswald", "Arial Narrow", sans-serif;
-    --serif: "Playfair Display", Georgia, serif;
-    --corpo: "Manrope", "Segoe UI", system-ui, sans-serif;
+    --tit: "Montserrat", "Segoe UI", Arial, sans-serif;
+    --corpo: "Source Sans 3", "Segoe UI", Arial, sans-serif;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { margin: 0; background: var(--preto); color: var(--texto); font: 400 17px/1.6 var(--corpo); }
+  body { margin: 0; background: var(--fundo); color: var(--texto); font: 400 17.5px/1.6 var(--corpo); }
   img { max-width: 100%; display: block; }
   a { color: inherit; }
-  .wrap { width: min(1160px, 100% - 40px); margin-inline: auto; }
-  .previa { background: var(--ouro); color: var(--preto); text-align: center; font-size: 13px; font-weight: 700; padding: 7px 12px; }
+  h1, h2, h3 { font-family: var(--tit); color: var(--preto); margin: 0; letter-spacing: -.01em; text-wrap: balance; }
+  .wrap { width: min(1180px, 100% - 40px); margin-inline: auto; }
+  .previa { background: var(--preto); color: #fff; text-align: center; font-size: 13px; padding: 6px 12px; }
+  .previa b { color: var(--ouro); }
 
-  /* Título no estilo dos posts: itálico serifado branco + condensada amarela em caixa alta */
-  .post-tit { margin: 0; line-height: 1.02; }
-  .post-tit em { display: block; font-family: var(--serif); font-style: italic; font-weight: 700; color: var(--branco); font-size: .62em; letter-spacing: -.005em; }
-  .post-tit strong { display: block; font-family: var(--cond); font-weight: 700; color: var(--ouro); text-transform: uppercase; letter-spacing: .005em; }
-  .post-tit small { display: block; font: 500 16px/1.5 var(--corpo); color: var(--suave); margin-top: 12px; }
-
-  header { position: sticky; top: 0; z-index: 30; background: rgba(11, 11, 11, .94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--linha); }
-  header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; height: 66px; }
-  .marca { text-decoration: none; display: grid; line-height: 1; justify-items: center; }
-  .marca b { font-family: var(--corpo); font-weight: 800; font-size: 25px; letter-spacing: .08em; color: var(--ouro); }
-  .marca small { font: 700 10.5px var(--corpo); letter-spacing: .36em; color: #fff; margin-top: 3px; padding-left: .36em; }
-  nav { display: flex; gap: 24px; font-weight: 600; font-size: 15px; }
-  nav a { text-decoration: none; color: var(--suave); }
-  nav a:hover { color: var(--ouro); }
-  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 50px; padding: 0 24px; border-radius: 999px; font: 800 15px var(--corpo); text-decoration: none; border: 0; cursor: pointer; white-space: nowrap; transition: transform .2s, background-color .2s; }
-  .btn:hover { transform: translateY(-2px); }
+  /* Barra de contato + cabeçalho */
+  .barra { background: var(--cinza); border-bottom: 1px solid var(--linha); font-size: 14px; color: var(--suave); }
+  .barra .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 20px; padding-block: 8px; }
+  .barra span { display: inline-flex; gap: 6px; align-items: center; }
+  .barra b { color: var(--texto); font-weight: 600; }
+  header { position: sticky; top: 0; z-index: 30; background: rgba(255, 255, 255, .97); border-bottom: 1px solid var(--linha); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 74px; }
+  .marca { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .marca .selo { background: var(--preto); padding: 8px 12px 7px; line-height: 1; text-align: center; }
+  .marca .selo b { display: block; font-family: var(--tit); font-weight: 800; font-size: 19px; letter-spacing: .1em; color: var(--ouro); }
+  .marca .selo small { display: block; font-family: var(--tit); font-weight: 600; font-size: 7.5px; letter-spacing: .38em; color: #fff; margin-top: 3px; }
+  nav { display: flex; gap: 28px; font-weight: 600; font-size: 16px; }
+  nav a { text-decoration: none; color: var(--grafite); padding-block: 6px; border-bottom: 2px solid transparent; }
+  nav a:hover { border-bottom-color: var(--ouro); }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 22px; border-radius: 4px; font: 700 15.5px var(--corpo); text-decoration: none; border: 1.5px solid transparent; cursor: pointer; white-space: nowrap; transition: background-color .2s, color .2s, border-color .2s; }
   .btn-ouro { background: var(--ouro); color: var(--preto); }
-  .btn-ouro:hover { background: var(--ouro-claro); }
-  .btn-linha { background: transparent; color: #fff; border: 1.5px solid rgba(255, 255, 255, .35); }
+  .btn-ouro:hover { background: #f5b923; }
+  .btn-contorno { border-color: var(--preto); color: var(--preto); background: transparent; }
+  .btn-contorno:hover { background: var(--preto); color: #fff; }
   .btn-zap { background: var(--zap); color: #fff; }
   .btn svg { width: 18px; height: 18px; }
 
-  /* Herói: texto no estilo dos posts + um post grande */
-  .heroi { padding: 56px 0 30px; background: radial-gradient(55% 70% at 78% 35%, #2a2214 0%, transparent 70%); }
-  .heroi .grade { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 44px; align-items: center; }
-  .heroi .post-tit { font-size: clamp(48px, 7vw, 96px); }
-  .heroi .lead { color: var(--texto); font-size: 19px; max-width: 520px; margin: 22px 0 28px; }
+  /* Herói */
+  .heroi { padding: 64px 0 56px; }
+  .heroi .grade { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 52px; align-items: center; }
+  .rotulo { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; color: var(--ouro-esc); }
+  .rotulo::before { content: ""; width: 28px; height: 2px; background: var(--ouro); }
+  .heroi h1 { font-size: clamp(34px, 4.4vw, 54px); line-height: 1.1; margin: 16px 0 18px; font-weight: 800; }
+  .heroi .lead { font-size: 19px; color: var(--suave); max-width: 540px; margin: 0 0 30px; }
   .acoes { display: flex; flex-wrap: wrap; gap: 12px; }
-  .selos { display: flex; flex-wrap: wrap; gap: 10px 26px; margin-top: 28px; color: var(--suave); font-size: 15px; }
-  .selos b { font-family: var(--cond); font-weight: 700; font-size: 30px; color: #fff; margin-right: 6px; }
-  .estrelas { color: var(--ouro); letter-spacing: 1px; }
-  .post-grande { position: relative; justify-self: center; width: min(440px, 100%); }
-  .post-grande img { width: 100%; height: auto; border-radius: 6px; box-shadow: 0 40px 80px rgba(0, 0, 0, .6); }
-  .post-grande .ig { position: absolute; left: -14px; top: 22px; display: flex; align-items: center; gap: 10px; background: #fff; color: var(--preto); border-radius: 999px; padding: 6px 14px 6px 6px; font-weight: 800; font-size: 14px; box-shadow: 0 10px 30px rgba(0, 0, 0, .4); }
-  .post-grande .ig img { width: 34px; height: 34px; border-radius: 50%; box-shadow: none; }
+  .nota-google { display: flex; align-items: center; gap: 12px; margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--linha); font-size: 15.5px; color: var(--suave); }
+  .nota-google b { font-family: var(--tit); font-size: 26px; color: var(--preto); }
+  .estrelas { color: var(--ouro); letter-spacing: 2px; }
+  .fotos-heroi { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .fotos-heroi img { width: 100%; height: 100%; object-fit: cover; }
+  .fotos-heroi .grande { grid-column: 1 / -1; aspect-ratio: 16 / 10; }
+  .fotos-heroi .peq { aspect-ratio: 4 / 3; }
 
-  /* Destaques do Instagram = filtros da galeria */
-  .destaques { display: flex; gap: 22px; overflow-x: auto; padding: 22px 2px 6px; scrollbar-width: none; }
-  .destaques button { flex: none; display: grid; justify-items: center; gap: 8px; background: none; border: 0; color: var(--texto); font: 700 13.5px var(--corpo); cursor: pointer; }
-  .destaques .anel { width: 82px; height: 82px; border-radius: 50%; padding: 3px; background: var(--linha); }
-  .destaques button[aria-pressed="true"] .anel { background: conic-gradient(var(--ouro), #ffe08a, var(--ouro)); }
-  .destaques .anel img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 3px solid var(--preto); }
+  /* Faixa de números */
+  .numeros { background: var(--preto); color: #fff; }
+  .numeros .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .numeros div { padding: 26px 18px; border-right: 1px solid #2c2c2c; }
+  .numeros div:last-child { border-right: 0; }
+  .numeros b { display: block; font-family: var(--tit); font-weight: 800; font-size: 30px; color: var(--ouro); line-height: 1.15; }
+  .numeros span { color: #bdbdbd; font-size: 15px; }
 
-  section.bloco { padding: 80px 0; }
-  .cab { max-width: 760px; margin-bottom: 30px; }
-  .cab .post-tit { font-size: clamp(38px, 5vw, 64px); }
+  section.bloco { padding: 88px 0; }
+  .cinza { background: var(--cinza); }
+  .cab { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px 40px; margin-bottom: 38px; }
+  .cab h2 { font-size: clamp(28px, 3.4vw, 40px); line-height: 1.15; margin-top: 10px; font-weight: 800; }
+  .cab p { color: var(--suave); max-width: 460px; margin: 0; }
 
-  /* Galeria de obras (posts reais) */
-  .feed { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
-  .feed a { position: relative; display: block; border-radius: 6px; overflow: hidden; aspect-ratio: 4 / 5; background: var(--preto-2); }
-  .feed a[hidden] { display: none; }
-  .feed img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
-  .feed a:hover img { transform: scale(1.04); }
-  .feed-rodape { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px; margin-top: 18px; color: var(--suave); }
+  /* Serviços */
+  .servicos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .servico { background: var(--fundo); border: 1px solid var(--linha); display: flex; flex-direction: column; }
+  .servico img { aspect-ratio: 16 / 10; width: 100%; object-fit: cover; }
+  .servico .txt { padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  .servico h3 { font-size: 20px; }
+  .servico p { margin: 0; color: var(--suave); font-size: 16px; flex: 1; }
+  .servico a { font-weight: 700; color: var(--preto); text-decoration: none; border-bottom: 2px solid var(--ouro); align-self: flex-start; padding-bottom: 2px; margin-top: 6px; }
 
-  /* Serviços como lista de "posts" de texto */
-  .servicos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
-  .servicos button { text-align: left; background: var(--preto-2); border: 1px solid var(--linha); border-radius: 6px; padding: 22px; color: var(--texto); cursor: pointer; display: grid; gap: 6px; transition: border-color .2s, background-color .2s; }
-  .servicos button:hover { border-color: var(--ouro); background: var(--preto-3); }
-  .servicos strong { font-family: var(--cond); font-weight: 700; font-size: 26px; text-transform: uppercase; color: var(--ouro); line-height: 1.05; }
-  .servicos span { color: var(--suave); font-size: 15px; }
-
-  /* Monte seu pedido */
-  .pedido { background: var(--preto-2); border: 1px solid var(--linha); border-radius: 10px; padding: 40px; display: grid; grid-template-columns: .85fr 1.15fr; gap: 40px; }
-  .pedido .ref { margin-top: 22px; width: min(260px, 100%); }
-  .pedido .ref img { width: 100%; height: auto; border-radius: 6px; }
-  form { display: grid; gap: 18px; }
-  fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
-  legend, .rot { display: block; font-weight: 800; margin-bottom: 9px; color: #fff; }
-  .opcoes { display: flex; flex-wrap: wrap; gap: 8px; }
-  .opcoes label { position: relative; }
-  .opcoes input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
-  .opcoes span { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1.5px solid #3a372f; font-weight: 700; font-size: 15px; cursor: pointer; }
-  .opcoes input:checked + span { background: var(--ouro); border-color: var(--ouro); color: var(--preto); }
-  .opcoes input:focus-visible + span { outline: 2px solid #fff; outline-offset: 2px; }
-  .cor { width: 16px; height: 16px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, .35); }
-  .duas-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-  .campo { width: 100%; min-height: 48px; border-radius: 12px; border: 1.5px solid #3a372f; background: var(--preto); color: #fff; padding: 0 14px; font: inherit; }
-  .campo::placeholder { color: #8d877a; }
-  .resumo { background: var(--preto); border-left: 4px solid var(--ouro); border-radius: 8px; padding: 12px 14px; font-size: 15px; color: var(--texto); white-space: pre-line; }
+  /* Projetos */
+  .abas { display: flex; flex-wrap: wrap; gap: 6px 26px; border-bottom: 1px solid var(--linha); margin-bottom: 26px; }
+  .abas button { background: none; border: 0; border-bottom: 3px solid transparent; padding: 10px 0 12px; font: 600 16px var(--corpo); color: var(--suave); cursor: pointer; margin-bottom: -1px; }
+  .abas button[aria-pressed="true"] { color: var(--preto); border-bottom-color: var(--ouro); }
+  .projetos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .projeto[hidden] { display: none; }
+  .projeto img { aspect-ratio: 4 / 3; width: 100%; object-fit: cover; }
+  .projeto p { margin: 10px 0 0; font-size: 15px; color: var(--suave); }
+  .projeto p b { display: block; color: var(--preto); font-size: 16px; }
+  .ver-mais { margin-top: 30px; display: flex; flex-wrap: wrap; align-items: center; gap: 14px; color: var(--suave); }
 
   /* Como trabalhamos */
-  .etapas { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
-  .etapa { background: var(--preto-2); border: 1px solid var(--linha); border-radius: 6px; padding: 22px; display: grid; gap: 8px; align-content: start; }
-  .etapa .post-tit { font-size: 30px; }
-  .etapa p { margin: 0; color: var(--suave); font-size: 15.5px; }
+  .sobre { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
+  .sobre img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  .passos { list-style: none; margin: 26px 0 0; padding: 0; display: grid; gap: 0; counter-reset: p; }
+  .passos li { counter-increment: p; display: grid; grid-template-columns: 52px 1fr; gap: 14px; padding: 16px 0; border-top: 1px solid var(--linha); }
+  .passos li::before { content: counter(p, decimal-leading-zero); font-family: var(--tit); font-weight: 800; font-size: 22px; color: var(--ouro-esc); }
+  .passos b { display: block; font-family: var(--tit); font-size: 17px; color: var(--preto); }
+  .passos span { color: var(--suave); font-size: 16px; }
 
-  .loja { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .info { background: var(--preto-2); border: 1px solid var(--linha); border-radius: 6px; padding: 30px; }
-  .grande { font-family: var(--cond); font-weight: 700; font-size: 88px; line-height: 1; color: var(--ouro); }
-  .info p { color: var(--suave); }
+  /* Orçamento */
+  .orcamento { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 48px; align-items: start; }
+  .contatos { display: grid; gap: 14px; margin-top: 24px; }
+  .contatos div { border-left: 3px solid var(--ouro); padding: 4px 0 4px 14px; }
+  .contatos b { display: block; font-family: var(--tit); font-size: 15px; color: var(--preto); }
+  .contatos span { color: var(--suave); }
+  form { background: var(--fundo); border: 1px solid var(--linha); padding: 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .campo { display: grid; gap: 6px; min-width: 0; }
+  .campo.inteiro { grid-column: 1 / -1; }
+  .campo label { font-weight: 700; font-size: 14.5px; color: var(--preto); }
+  .campo input, .campo select, .campo textarea { width: 100%; min-height: 48px; border: 1px solid #cfcfca; border-radius: 4px; padding: 0 12px; font: inherit; background: #fff; color: var(--texto); }
+  .campo textarea { min-height: 100px; padding: 10px 12px; resize: vertical; }
+  .campo input:focus, .campo select:focus, .campo textarea:focus { outline: 2px solid var(--ouro); outline-offset: 0; border-color: var(--ouro); }
+  form .rodape-form { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+  form small { color: var(--suave); font-size: 14px; }
 
-  footer { border-top: 1px solid var(--linha); color: var(--suave); padding: 40px 0 110px; font-size: 14.5px; }
-  footer .wrap { display: grid; gap: 8px; justify-items: start; }
-  .ns { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--linha); font-size: 12.5px; }
-  .zap-fixo { position: fixed; right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); z-index: 40; width: 58px; height: 58px; border-radius: 50%; background: var(--zap); color: #fff; display: grid; place-items: center; box-shadow: 0 10px 30px rgba(0, 0, 0, .45); }
+  /* Localização */
+  .local { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: 0; border: 1px solid var(--linha); }
+  .local iframe { width: 100%; height: 100%; min-height: 360px; border: 0; display: block; }
+  .local .info { padding: 34px; display: grid; gap: 14px; align-content: center; }
+  .local .grande { font-family: var(--tit); font-weight: 800; font-size: 56px; line-height: 1; color: var(--preto); }
+
+  footer { background: var(--preto); color: #bdbdbd; padding: 48px 0 110px; font-size: 15px; }
+  footer .wrap { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 30px; }
+  footer h3 { color: #fff; font-size: 15px; margin-bottom: 10px; }
+  footer a { color: #e6e6e6; }
+  .ns { grid-column: 1 / -1; border-top: 1px solid #2c2c2c; padding-top: 18px; font-size: 13px; color: #8f8f8f; }
+  .zap-fixo { position: fixed; right: max(18px, env(safe-area-inset-right)); bottom: max(18px, env(safe-area-inset-bottom)); z-index: 40; width: 56px; height: 56px; border-radius: 50%; background: var(--zap); color: #fff; display: grid; place-items: center; box-shadow: 0 8px 24px rgba(0, 0, 0, .25); }
   .zap-fixo svg { width: 28px; height: 28px; }
   :focus-visible { outline: 2px solid var(--ouro); outline-offset: 3px; }
 
-  @media (max-width: 980px) {
-    .heroi .grade, .pedido, .loja { grid-template-columns: 1fr; }
-    .feed { grid-template-columns: repeat(3, 1fr); }
-    .etapas { grid-template-columns: 1fr 1fr; }
-    .servicos { grid-template-columns: 1fr 1fr; }
+  @media (max-width: 1000px) {
+    .heroi .grade, .sobre, .orcamento, .local { grid-template-columns: 1fr; }
+    .servicos, .projetos { grid-template-columns: 1fr 1fr; }
+    .numeros .wrap { grid-template-columns: 1fr 1fr; }
+    .numeros div:nth-child(2) { border-right: 0; }
+    .numeros div:nth-child(-n+2) { border-bottom: 1px solid #2c2c2c; }
+    footer .wrap { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 640px) {
     nav { display: none; }
-    header .btn { min-height: 42px; padding: 0 16px; font-size: 14px; }
-    .heroi { padding-top: 34px; }
+    .barra .wrap { font-size: 13px; }
+    .barra .some { display: none; }
+    header .wrap { height: 64px; }
+    header .btn { min-height: 42px; padding: 0 14px; font-size: 14.5px; }
+    .heroi { padding: 34px 0 40px; }
+    .heroi h1 { font-size: 30px; }
+    .heroi .grade { gap: 30px; }
     .acoes .btn { flex: 1 1 100%; }
-    .post-grande { width: min(340px, 100%); }
-    .post-grande .ig { left: 8px; }
-    .feed { grid-template-columns: 1fr 1fr; gap: 8px; }
-    .etapas, .servicos, .duas-col { grid-template-columns: 1fr; }
-    .pedido, .info { padding: 24px 18px; }
-    .destaques .anel { width: 70px; height: 70px; }
-    section.bloco { padding: 56px 0; }
+    .servicos, .projetos { grid-template-columns: 1fr; }
+    form { grid-template-columns: 1fr; padding: 22px 18px; }
+    section.bloco { padding: 60px 0; }
+    .local .info { padding: 24px 18px; }
+    footer .wrap { grid-template-columns: 1fr; }
   }
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    .btn, .feed img, .servicos button { transition: none; }
-  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
 </style>
 </head>
 <body>
-<div class="previa">Prévia de site feita pela Negócios Smart para a Agnes Serralheria · não é o site oficial</div>
+<div class="previa">Prévia de site feita pela <b>Negócios Smart</b> para a Agnes Serralheria · não é o site oficial</div>
+
+<div class="barra">
+  <div class="wrap">
+    <span><b>R. João Bosa, 109</b> · Nossa Sra. de Fátima · Içara/SC</span>
+    <span class="some">Seg. a sex. · 7h às 12h e 13h às 17h</span>
+    <span>WhatsApp <b>(48) 99693-4592</b></span>
+  </div>
+</div>
 
 <header>
   <div class="wrap">
-    <a class="marca" href="#topo" aria-label="Agnes Serralheria — início"><b>AGNES</b><small>SERRALHERIA</small></a>
-    <nav aria-label="Principal"><a href="#obras">Obras</a><a href="#servicos">Serviços</a><a href="#pedido">Orçamento</a><a href="#contato">Contato</a></nav>
-    <a class="btn btn-ouro" href="#pedido">Orçamento</a>
+    <a class="marca" href="#topo" aria-label="Agnes Serralheria — início"><span class="selo"><b>AGNES</b><small>SERRALHERIA</small></span></a>
+    <nav aria-label="Principal"><a href="#servicos">Serviços</a><a href="#projetos">Projetos</a><a href="#como-trabalhamos">Como trabalhamos</a><a href="#contato">Contato</a></nav>
+    <a class="btn btn-ouro" href="#orcamento">Solicitar orçamento</a>
   </div>
 </header>
 
@@ -179,144 +201,133 @@
   <section class="heroi">
     <div class="wrap grade">
       <div>
-        <h1 class="post-tit"><em>Transformamos seu projeto</em><strong>em realidade.</strong></h1>
-        <p class="lead">Portões, grades, corrimãos, guarda-corpos e estruturas em ferro, sob medida, em Içara e região. Do orçamento à instalação, com planejamento.</p>
+        <span class="rotulo">Serralheria em Içara e região</span>
+        <h1>Portões, grades e estruturas em ferro feitos sob medida para o seu projeto.</h1>
+        <p class="lead">Da referência que você nos manda até a instalação: projeto, fabricação e montagem com prazo combinado e acabamento que combina com o ambiente.</p>
         <div class="acoes">
-          <a class="btn btn-ouro" href="#pedido">Montar meu orçamento</a>
-          <a class="btn btn-linha" href="#obras">Ver obras</a>
+          <a class="btn btn-ouro" href="#orcamento">Solicitar orçamento</a>
+          <a class="btn btn-contorno" href="#projetos">Ver projetos</a>
         </div>
-        <div class="selos">
-          <span><b>5,0</b><span class="estrelas" aria-hidden="true">★★★★★</span> 220 avaliações no Google</span>
-          <span><b>5,9 mil</b>seguidores no Instagram</span>
-        </div>
+        <div class="nota-google"><b>5,0</b><span><span class="estrelas" aria-hidden="true">★★★★★</span><br>220 avaliações de clientes no Google</span></div>
       </div>
-      <div class="post-grande">
-        <img src="assets/guarda-corpo-piscina.webp" alt="Guarda-corpo em ferro preto na área da piscina, post da Agnes Serralheria" width="512" height="640" fetchpriority="high">
-        <span class="ig"><img src="assets/perfil.webp" alt="" width="34" height="34">@serralheriaagnes</span>
+      <div class="fotos-heroi">
+        <img class="grande" src="assets/obras/guarda-corpo-piscina.webp" alt="Guarda-corpo em ferro preto na área da piscina" width="512" height="360" fetchpriority="high">
+        <img class="peq" src="assets/obras/corrimao-dourado.webp" alt="Corrimão dourado com arabescos em escada" width="512" height="355">
+        <img class="peq" src="assets/obras/portao-fachada.webp" alt="Portão e fechamento de fachada em ferro" width="512" height="300">
       </div>
     </div>
   </section>
 
-  <section class="bloco" id="obras" style="padding-top:30px">
+  <div class="numeros">
     <div class="wrap">
-      <div class="cab">
-        <h2 class="post-tit"><em>Obras que falam</em><strong>por nós.</strong><small>Toque num destaque para filtrar, como no nosso Instagram.</small></h2>
-      </div>
-      <div class="destaques" role="group" aria-label="Filtrar obras">
-        <button type="button" data-cat="todas" aria-pressed="true"><span class="anel"><img src="assets/perfil.webp" alt="" width="100" height="100"></span>Todas</button>
-        <button type="button" data-cat="acao" aria-pressed="false"><span class="anel"><img src="assets/corrimao-instalacao.webp" alt="" width="512" height="640"></span>Em ação!</button>
-        <button type="button" data-cat="feitos" aria-pressed="false"><span class="anel"><img src="assets/sacada-guarda-corpo.webp" alt="" width="512" height="640"></span>Trabalhos feitos</button>
-        <button type="button" data-cat="corrimao" aria-pressed="false"><span class="anel"><img src="assets/corrimao-dourado.webp" alt="" width="512" height="640"></span>Corrimão!</button>
-        <button type="button" data-cat="estruturas" aria-pressed="false"><span class="anel"><img src="assets/painel-estrutura.webp" alt="" width="512" height="640"></span>Estruturas!</button>
-        <button type="button" data-cat="madeira" aria-pressed="false"><span class="anel"><img src="assets/fachada-garagem.webp" alt="" width="512" height="640"></span>P/Madeira</button>
-      </div>
-      <div class="feed" id="feed" style="margin-top:20px">
-        <a href="https://www.instagram.com/serralheriaagnes/" target="_blank" rel="noopener" data-cats="feitos corrimao"><img src="assets/guarda-corpo-piscina.webp" alt="Guarda-corpo em ferro na área da piscina" width="512" height="640" loading="lazy"></a>
-        <a href="https://www.instagram.com/serralheriaagnes/" target="_blank" rel="noopener" data-cats="feitos corrimao"><img src="assets/corrimao-dourado.webp" alt="Corrimão dourado com arabescos em escada de mármore" width="512" height="640" loading="lazy"></a>
-        <a href="https://www.instagram.com/serralheriaagnes/" target="_blank" rel="noopener" data-cats="feitos"><img src="assets/sacada-guarda-corpo.webp" alt="Guarda-corpo de sacada em ferro preto com arabescos" width="512" height="640" loading="lazy"></a>
-        <a href="https://www.instagram.com/serralheriaagnes/" target="_blank" rel="noopener" data-cats="feitos estruturas"><img src="assets/portao-fachada.webp" alt="Portão e fechamento de fachada em ferro" width="512" height="640" loading="lazy"></a>
-        <a href="https://www.instagram.com/serralheriaagnes/" target="_blank" rel="noopener" data-cats="feitos madeira estruturas"><img src="assets/fachada-garagem.webp" alt="Cobertura de garagem com acabamento em madeira" width="512" height="640" loading="lazy"></a>
-        <a href="https://www.instagram.com/serralheriaagnes/" target="_blank" rel="noopener" data-cats="feitos"><img src="assets/portas-venezianas.webp" alt="Portas venezianas em ferro" width="512" height="640" loading="lazy"></a>
-        <a href="https://www.instagram.com/serralheriaagnes/" target="_blank" rel="noopener" data-cats="acao corrimao"><img src="assets/corrimao-instalacao.webp" alt="Equipe da Agnes instalando corrimão" width="512" height="640" loading="lazy"></a>
-        <a href="https://www.instagram.com/serralheriaagnes/" target="_blank" rel="noopener" data-cats="acao estruturas"><img src="assets/painel-estrutura.webp" alt="Estrutura metálica sendo transportada para instalação" width="512" height="640" loading="lazy"></a>
-      </div>
-      <div class="feed-rodape"><span>Mais de 1.400 publicações com obras no Instagram.</span><a class="btn btn-linha" href="https://www.instagram.com/serralheriaagnes/" target="_blank" rel="noopener">Seguir @serralheriaagnes</a></div>
+      <div><b>5,0</b><span>nota no Google</span></div>
+      <div><b>220</b><span>avaliações de clientes</span></div>
+      <div><b>+1.400</b><span>publicações no Instagram</span></div>
+      <div><b>Içara</b><span>e região</span></div>
     </div>
-  </section>
+  </div>
 
-  <section class="bloco" id="servicos" style="padding-top:0">
+  <section class="bloco cinza" id="servicos">
     <div class="wrap">
       <div class="cab">
-        <h2 class="post-tit"><em>Corrimão não é detalhe.</em><strong>É segurança no uso.</strong><small>Ferro sob medida para casa e empresa. Toque no serviço e ele entra no seu orçamento.</small></h2>
+        <div><span class="rotulo">Serviços</span><h2>O que fabricamos e instalamos</h2></div>
+        <p>Cada peça é feita sob medida, no estilo e na cor que combinam com a sua casa ou empresa.</p>
       </div>
       <div class="servicos">
-        <button type="button" data-tipo="Portão"><strong>Portões</strong><span>Basculantes, de correr e sociais, no estilo da fachada.</span></button>
-        <button type="button" data-tipo="Grade"><strong>Grades</strong><span>Proteção para janelas, muros e fechamentos.</span></button>
-        <button type="button" data-tipo="Corrimão"><strong>Corrimãos</strong><span>Retos ou com arabescos, em preto, dourado e outras cores.</span></button>
-        <button type="button" data-tipo="Guarda-corpo"><strong>Guarda-corpos</strong><span>Sacadas, escadas e áreas de piscina.</span></button>
-        <button type="button" data-tipo="Estrutura / pergolado"><strong>Estruturas</strong><span>Coberturas, pergolados e estruturas metálicas.</span></button>
-        <button type="button" data-tipo="Portas e venezianas"><strong>Portas e venezianas</strong><span>Para espaços pequenos que pedem solução bem pensada.</span></button>
+        <article class="servico"><img src="assets/obras/portao-fachada.webp" alt="Portão de fachada" width="512" height="300" loading="lazy"><div class="txt"><h3>Portões</h3><p>Portões de correr, basculantes e sociais, integrados ao fechamento da fachada.</p><a href="#orcamento" data-servico="Portão">Solicitar orçamento</a></div></article>
+        <article class="servico"><img src="assets/obras/sacada-arabescos.webp" alt="Guarda-corpo de sacada com arabescos" width="512" height="380" loading="lazy"><div class="txt"><h3>Grades e guarda-corpos</h3><p>Sacadas, janelas e muros, do modelo reto ao clássico com arabescos.</p><a href="#orcamento" data-servico="Grade / guarda-corpo">Solicitar orçamento</a></div></article>
+        <article class="servico"><img src="assets/obras/corrimao-dourado.webp" alt="Corrimão dourado em escada de mármore" width="512" height="355" loading="lazy"><div class="txt"><h3>Corrimãos</h3><p>Para escadas internas e externas, com a segurança e o acabamento que o espaço pede.</p><a href="#orcamento" data-servico="Corrimão">Solicitar orçamento</a></div></article>
+        <article class="servico"><img src="assets/obras/guarda-corpo-piscina.webp" alt="Guarda-corpo na área da piscina" width="512" height="360" loading="lazy"><div class="txt"><h3>Áreas de piscina</h3><p>Guarda-corpos que protegem sem tirar a vista da área de lazer.</p><a href="#orcamento" data-servico="Guarda-corpo de piscina">Solicitar orçamento</a></div></article>
+        <article class="servico"><img src="assets/obras/garagem-madeira.webp" alt="Cobertura de garagem com acabamento em madeira" width="512" height="370" loading="lazy"><div class="txt"><h3>Estruturas e coberturas</h3><p>Coberturas, pergolados e estruturas metálicas, inclusive com acabamento em madeira.</p><a href="#orcamento" data-servico="Estrutura / cobertura">Solicitar orçamento</a></div></article>
+        <article class="servico"><img src="assets/obras/portas-venezianas.webp" alt="Portas venezianas em ferro" width="512" height="330" loading="lazy"><div class="txt"><h3>Portas e venezianas</h3><p>Soluções para áreas técnicas e espaços pequenos, com ventilação.</p><a href="#orcamento" data-servico="Portas e venezianas">Solicitar orçamento</a></div></article>
       </div>
     </div>
   </section>
 
-  <section class="bloco" id="pedido" style="padding-top:0">
-    <div class="wrap">
-      <div class="pedido">
-        <div>
-          <h2 class="post-tit" style="font-size:clamp(34px,4.4vw,56px)"><em>Sua referência ajuda a</em><strong>criar o projeto ideal.</strong><small>Escolha o que precisa, o estilo e a cor. A mensagem chega pronta no WhatsApp da Agnes, e você já manda fotos do local e de modelos que gosta.</small></h2>
-          <div class="ref"><img src="assets/referencia.webp" alt="Post da Agnes: cliente mandando foto de referência pelo WhatsApp" width="512" height="640" loading="lazy"></div>
-        </div>
-        <form id="form" novalidate>
-          <fieldset>
-            <legend>1. O que você precisa?</legend>
-            <div class="opcoes">
-              <label><input type="radio" name="tipo" value="Portão" checked><span>Portão</span></label>
-              <label><input type="radio" name="tipo" value="Grade"><span>Grade</span></label>
-              <label><input type="radio" name="tipo" value="Corrimão"><span>Corrimão</span></label>
-              <label><input type="radio" name="tipo" value="Guarda-corpo"><span>Guarda-corpo</span></label>
-              <label><input type="radio" name="tipo" value="Estrutura / pergolado"><span>Estrutura</span></label>
-              <label><input type="radio" name="tipo" value="Portas e venezianas"><span>Portas/venezianas</span></label>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>2. Estilo</legend>
-            <div class="opcoes">
-              <label><input type="radio" name="estilo" value="moderno, linhas retas" checked><span>Moderno (reto)</span></label>
-              <label><input type="radio" name="estilo" value="ripado"><span>Ripado</span></label>
-              <label><input type="radio" name="estilo" value="clássico, com arabescos"><span>Clássico (arabescos)</span></label>
-              <label><input type="radio" name="estilo" value="a definir com vocês"><span>Ainda não sei</span></label>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>3. Cor</legend>
-            <div class="opcoes">
-              <label><input type="radio" name="cor" value="preto" checked><span><i class="cor" style="background:#111"></i>Preto</span></label>
-              <label><input type="radio" name="cor" value="dourado"><span><i class="cor" style="background:#c9a227"></i>Dourado</span></label>
-              <label><input type="radio" name="cor" value="branco"><span><i class="cor" style="background:#f4f4f4"></i>Branco</span></label>
-              <label><input type="radio" name="cor" value="grafite"><span><i class="cor" style="background:#4a4d52"></i>Grafite</span></label>
-              <label><input type="radio" name="cor" value="a definir"><span>A definir</span></label>
-            </div>
-          </fieldset>
-          <div class="duas-col">
-            <div><label class="rot" for="medida">Medida aproximada</label><input class="campo" id="medida" placeholder="Ex.: 3,5 m de largura"></div>
-            <div><label class="rot" for="bairro">Bairro e cidade</label><input class="campo" id="bairro" placeholder="Ex.: Centro, Içara"></div>
-          </div>
-          <div class="resumo" id="resumo" aria-live="polite"></div>
-          <button class="btn btn-zap" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>Enviar pedido no WhatsApp</button>
-          <p style="margin:0;font-size:13px;color:#8d877a">Na prévia, o botão já abre o WhatsApp da Agnes com a mensagem pronta.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <section class="bloco" style="padding-top:0">
+  <section class="bloco" id="projetos">
     <div class="wrap">
       <div class="cab">
-        <h2 class="post-tit"><em>Prazo também faz parte</em><strong>da qualidade.</strong></h2>
+        <div><span class="rotulo">Projetos</span><h2>Obras entregues</h2></div>
+        <p>Alguns dos trabalhos recentes. Novas obras toda semana no nosso Instagram.</p>
       </div>
-      <div class="etapas">
-        <div class="etapa"><h3 class="post-tit"><em>1.</em><strong>Referência</strong></h3><p>Você manda fotos do local e de modelos que gosta. O projeto nasce do jeito que você imagina.</p></div>
-        <div class="etapa"><h3 class="post-tit"><em>2.</em><strong>Planejamento</strong></h3><p>Medidas, transporte, acesso e montagem pensados antes. Instalar bem também exige planejamento.</p></div>
-        <div class="etapa"><h3 class="post-tit"><em>3.</em><strong>Fabricação</strong></h3><p>Feito sob medida, com o prazo combinado. Organização evita atraso e improviso.</p></div>
-        <div class="etapa"><h3 class="post-tit"><em>4.</em><strong>Entrega</strong></h3><p>Instalação e acompanhamento. A entrega não termina quando o projeto fica pronto.</p></div>
+      <div class="abas" role="group" aria-label="Filtrar projetos">
+        <button type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+        <button type="button" data-filtro="corrimao" aria-pressed="false">Corrimãos e guarda-corpos</button>
+        <button type="button" data-filtro="portao" aria-pressed="false">Portões e fachadas</button>
+        <button type="button" data-filtro="estrutura" aria-pressed="false">Estruturas</button>
+      </div>
+      <div class="projetos" id="projetos-grade">
+        <figure class="projeto" data-cat="corrimao" style="margin:0"><img src="assets/obras/guarda-corpo-piscina.webp" alt="Guarda-corpo em área de piscina" width="512" height="360" loading="lazy"><p><b>Guarda-corpo de piscina</b>Ferro preto, linhas retas</p></figure>
+        <figure class="projeto" data-cat="corrimao" style="margin:0"><img src="assets/obras/corrimao-dourado.webp" alt="Corrimão dourado com arabescos" width="512" height="355" loading="lazy"><p><b>Corrimão de escada</b>Dourado, com arabescos</p></figure>
+        <figure class="projeto" data-cat="corrimao" style="margin:0"><img src="assets/obras/sacada-arabescos.webp" alt="Guarda-corpo de sacada" width="512" height="380" loading="lazy"><p><b>Guarda-corpo de sacada</b>Preto, modelo clássico</p></figure>
+        <figure class="projeto" data-cat="portao" style="margin:0"><img src="assets/obras/portao-fachada.webp" alt="Portão e fechamento de fachada" width="512" height="300" loading="lazy"><p><b>Portão e fechamento</b>Ripado preto com portão basculante</p></figure>
+        <figure class="projeto" data-cat="estrutura" style="margin:0"><img src="assets/obras/garagem-madeira.webp" alt="Cobertura de garagem com madeira" width="512" height="370" loading="lazy"><p><b>Cobertura de garagem</b>Estrutura com acabamento em madeira</p></figure>
+        <figure class="projeto" data-cat="estrutura" style="margin:0"><img src="assets/obras/portas-venezianas.webp" alt="Portas venezianas" width="512" height="330" loading="lazy"><p><b>Portas venezianas</b>Área técnica com ventilação</p></figure>
+        <figure class="projeto" data-cat="corrimao" style="margin:0"><img src="assets/obras/instalacao-corrimao.webp" alt="Equipe instalando corrimão" width="512" height="350" loading="lazy"><p><b>Instalação de corrimão</b>Montagem no local</p></figure>
+        <figure class="projeto" data-cat="estrutura" style="margin:0"><img src="assets/obras/estrutura-transporte.webp" alt="Estrutura metálica no transporte para a obra" width="512" height="380" loading="lazy"><p><b>Estrutura metálica</b>Transporte e montagem planejados</p></figure>
+      </div>
+      <div class="ver-mais"><a class="btn btn-contorno" href="https://www.instagram.com/serralheriaagnes/" target="_blank" rel="noopener">Ver mais no Instagram</a><span>@serralheriaagnes · 5,9 mil seguidores</span></div>
+    </div>
+  </section>
+
+  <section class="bloco cinza" id="como-trabalhamos">
+    <div class="wrap sobre">
+      <img src="assets/obras/instalacao-corrimao.webp" alt="Equipe da Agnes Serralheria instalando corrimão" width="512" height="350" loading="lazy">
+      <div>
+        <span class="rotulo">Como trabalhamos</span>
+        <h2 style="font-size:clamp(28px,3.4vw,40px);margin-top:10px">Planejamento do orçamento à entrega</h2>
+        <ol class="passos">
+          <li><div><b>Referência</b><span>Você manda fotos do local e de modelos que gosta. É assim que o projeto começa do jeito certo.</span></div></li>
+          <li><div><b>Medição e projeto</b><span>Medidas, acesso, transporte e montagem pensados antes da fabricação.</span></div></li>
+          <li><div><b>Fabricação</b><span>Peça feita sob medida, com o prazo combinado no orçamento.</span></div></li>
+          <li><div><b>Instalação e acompanhamento</b><span>Montagem no local e atendimento depois da entrega.</span></div></li>
+        </ol>
       </div>
     </div>
   </section>
 
-  <section class="bloco" id="contato" style="padding-top:0">
-    <div class="wrap loja">
-      <div class="info">
-        <div class="grande">5,0</div>
-        <p><span class="estrelas">★★★★★</span> 220 avaliações de clientes no Google.</p>
-        <a class="btn btn-linha" href="https://www.google.com/search?q=Serralheria+Agnes+I%C3%A7ara" target="_blank" rel="noopener">Ler as avaliações</a>
+  <section class="bloco" id="orcamento">
+    <div class="wrap orcamento">
+      <div>
+        <span class="rotulo">Orçamento</span>
+        <h2 style="font-size:clamp(28px,3.4vw,40px);margin-top:10px">Solicite seu orçamento</h2>
+        <p style="color:var(--suave)">Preencha os dados e a mensagem abre pronta no WhatsApp da Agnes. Na conversa, você pode enviar fotos do local e de referências.</p>
+        <div class="contatos">
+          <div><b>WhatsApp</b><span>(48) 99693-4592</span></div>
+          <div><b>Instagram</b><span>@serralheriaagnes</span></div>
+          <div><b>Endereço</b><span>R. João Bosa, 109 · Nossa Sra. de Fátima · Içara/SC</span></div>
+          <div><b>Horário</b><span>Segunda a sexta · 7h às 12h e 13h às 17h</span></div>
+        </div>
       </div>
-      <div class="info">
-        <h2 class="post-tit" style="font-size:44px"><em>Venha conhecer</em><strong>Içara · N. Sra. de Fátima</strong></h2>
-        <p>R. João Bosa, 109 · Nossa Sra. de Fátima · Içara/SC<br>Segunda a sexta · 7h às 12h e 13h às 17h</p>
-        <div class="acoes">
-          <a class="btn btn-ouro" href="https://www.google.com/maps/search/?api=1&query=R.+Jo%C3%A3o+Bosa+109+I%C3%A7ara+SC" target="_blank" rel="noopener">Como chegar</a>
-          <a class="btn btn-zap" href="#pedido">Pedir orçamento</a>
+      <form id="form" novalidate>
+        <div class="campo"><label for="f-servico">Serviço</label>
+          <select id="f-servico"><option>Portão</option><option>Grade / guarda-corpo</option><option>Corrimão</option><option>Guarda-corpo de piscina</option><option>Estrutura / cobertura</option><option>Portas e venezianas</option><option>Outro</option></select></div>
+        <div class="campo"><label for="f-estilo">Estilo</label>
+          <select id="f-estilo"><option>Moderno (linhas retas)</option><option>Ripado</option><option>Clássico (arabescos)</option><option>Ainda não sei</option></select></div>
+        <div class="campo"><label for="f-cor">Cor</label>
+          <select id="f-cor"><option>Preto</option><option>Dourado</option><option>Branco</option><option>Grafite</option><option>A definir</option></select></div>
+        <div class="campo"><label for="f-medida">Medida aproximada</label><input id="f-medida" placeholder="Ex.: 3,5 m de largura"></div>
+        <div class="campo"><label for="f-nome">Seu nome</label><input id="f-nome" autocomplete="name"></div>
+        <div class="campo"><label for="f-local">Bairro e cidade</label><input id="f-local" placeholder="Ex.: Centro, Içara"></div>
+        <div class="campo inteiro"><label for="f-msg">Detalhes (opcional)</label><textarea id="f-msg" placeholder="Conte o que precisa. Depois é só mandar as fotos na conversa."></textarea></div>
+        <div class="rodape-form">
+          <button class="btn btn-zap" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>Enviar pelo WhatsApp</button>
+          <small>Na prévia, o botão já abre o WhatsApp da Agnes com a mensagem pronta.</small>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="bloco cinza" id="contato">
+    <div class="wrap">
+      <div class="local">
+        <iframe title="Mapa da Agnes Serralheria em Içara" src="https://www.google.com/maps?q=R.+Jo%C3%A3o+Bosa,+109,+I%C3%A7ara+-+SC&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="info" style="background:#fff">
+          <span class="rotulo">Onde estamos</span>
+          <div class="grande">5,0 <span class="estrelas" style="font-size:20px">★★★★★</span></div>
+          <p style="margin:0;color:var(--suave)">220 avaliações de clientes no Google.</p>
+          <p style="margin:0">R. João Bosa, 109 · Nossa Sra. de Fátima · Içara/SC</p>
+          <div class="acoes"><a class="btn btn-ouro" href="https://www.google.com/maps/search/?api=1&query=R.+Jo%C3%A3o+Bosa+109+I%C3%A7ara+SC" target="_blank" rel="noopener">Como chegar</a><a class="btn btn-contorno" href="https://www.google.com/search?q=Serralheria+Agnes+I%C3%A7ara" target="_blank" rel="noopener">Ver avaliações</a></div>
         </div>
       </div>
     </div>
@@ -325,37 +336,33 @@
 
 <footer>
   <div class="wrap">
-    <span class="marca"><b>AGNES</b><small>SERRALHERIA</small></span>
-    <span>R. João Bosa, 109 · Nossa Sra. de Fátima · Içara/SC · (48) 99693-4592 · @serralheriaagnes</span>
-    <span class="ns">Prévia criada pela Negócios Smart (negociosmart.com.br) como proposta de site. Imagens do Instagram da Agnes Serralheria; textos provisórios, revisados com a Agnes antes da publicação.</span>
+    <div><span class="marca"><span class="selo"><b>AGNES</b><small>SERRALHERIA</small></span></span><p style="margin:14px 0 0">Portões, grades, corrimãos, guarda-corpos e estruturas em ferro sob medida em Içara e região.</p></div>
+    <div><h3>Contato</h3>WhatsApp (48) 99693-4592<br><a href="https://www.instagram.com/serralheriaagnes/" target="_blank" rel="noopener">@serralheriaagnes</a></div>
+    <div><h3>Endereço</h3>R. João Bosa, 109<br>Nossa Sra. de Fátima · Içara/SC<br>Seg. a sex. · 7h às 17h</div>
+    <p class="ns">Prévia criada pela Negócios Smart (negociosmart.com.br) como proposta de site. Fotos do Instagram da Agnes Serralheria; textos provisórios, revisados com a Agnes antes da publicação.</p>
   </div>
 </footer>
 
-<a class="zap-fixo" href="#pedido" aria-label="Pedir orçamento"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
+<a class="zap-fixo" href="#orcamento" aria-label="Solicitar orçamento"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
 
 <script>
   const $ = (s) => document.querySelector(s);
-  // Destaques filtram a galeria
-  document.querySelectorAll("[data-cat]").forEach((b) => b.addEventListener("click", () => {
-    document.querySelectorAll("[data-cat]").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
-    document.querySelectorAll("#feed a").forEach((a) => { a.hidden = b.dataset.cat !== "todas" && !a.dataset.cats.split(" ").includes(b.dataset.cat); });
+  document.querySelectorAll("[data-filtro]").forEach((b) => b.addEventListener("click", () => {
+    document.querySelectorAll("[data-filtro]").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+    document.querySelectorAll(".projeto").forEach((p) => { p.hidden = b.dataset.filtro !== "todos" && p.dataset.cat !== b.dataset.filtro; });
   }));
-  // Pedido
-  function texto() {
-    const f = new FormData($("#form"));
-    const med = $("#medida").value.trim(), bairro = $("#bairro").value.trim();
-    return `Olá, Agnes! Vim pelo site e quero um orçamento:\n• ${f.get("tipo")}\n• Estilo: ${f.get("estilo")}\n• Cor: ${f.get("cor")}` +
-      (med ? `\n• Medida aproximada: ${med}` : "") + (bairro ? `\n• Local: ${bairro}` : "") + `\nVou mandar fotos do local e de referência.`;
-  }
-  const atualizar = () => { $("#resumo").textContent = texto(); };
-  $("#form").addEventListener("input", atualizar);
-  $("#form").addEventListener("change", atualizar);
-  document.querySelectorAll("[data-tipo]").forEach((b) => b.addEventListener("click", () => {
-    const r = document.querySelector(`input[name=tipo][value="${b.dataset.tipo}"]`); if (r) r.checked = true;
-    atualizar(); document.getElementById("pedido").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
-  }));
-  $("#form").addEventListener("submit", (e) => { e.preventDefault(); window.open("https://wa.me/5548996934592?text=" + encodeURIComponent(texto()), "_blank", "noopener"); });
-  atualizar();
+  document.querySelectorAll("[data-servico]").forEach((a) => a.addEventListener("click", () => { $("#f-servico").value = a.dataset.servico; }));
+  $("#form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const v = (id) => $(id).value.trim();
+    const linhas = [`Olá, Agnes! Vim pelo site e gostaria de um orçamento.`, `• Serviço: ${v("#f-servico")}`, `• Estilo: ${v("#f-estilo")}`, `• Cor: ${v("#f-cor")}`];
+    if (v("#f-medida")) linhas.push(`• Medida aproximada: ${v("#f-medida")}`);
+    if (v("#f-local")) linhas.push(`• Local: ${v("#f-local")}`);
+    if (v("#f-msg")) linhas.push(`• Detalhes: ${v("#f-msg")}`);
+    if (v("#f-nome")) linhas.push(`Meu nome é ${v("#f-nome")}.`);
+    linhas.push("Vou enviar fotos do local e de referência.");
+    window.open("https://wa.me/5548996934592?text=" + encodeURIComponent(linhas.join("\n")), "_blank", "noopener");
+  });
 </script>
 </body>
 </html>
